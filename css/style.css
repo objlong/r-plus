@@ -1,0 +1,214 @@
+html {
+	font-size: 100%;
+}
+
+body {
+	font-family: "Verdana", "Microsoft YaHei", 微软雅黑, 宋体, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+	background-color: #A2E2C7;
+	color: #444;
+	margin: 0;
+}
+#menu{
+	overflow: hidden;
+}
+#menu .tab {
+	position: fixed;
+	width: 6rem;
+	height: 6rem;
+	background-color: #fff;
+	line-height: 6rem;
+	text-align: center;
+	font-size: 1rem;
+	border-radius: 50%;
+	cursor: pointer;
+}
+#menu.top .tab{
+	position: static;
+	border: .125rem solid #A2E2C7;
+	width: 25%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: left;
+	height: 3.75rem;
+	line-height: 3.5rem;
+}
+
+#menu> div:nth-child(1) {
+	left: 1.5rem;
+	top: 4.5rem;
+	animation: spread-one 0.5s infinite;
+	-webkit-animation: spread-one 0.5s infinite;
+	-ms-animation: spread-one 0.5s infinite;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+}
+
+#menu> div:nth-child(2) {
+	right: 1.5rem;
+	top: 4.5rem;
+	animation: spread-two 0.5s infinite;
+	-webkit-animation: spread-two 0.5s infinite;
+	-ms-animation: spread-two 0.5s infinite;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+}
+
+#menu> div:nth-child(3) {
+	left: 1.5rem;
+	bottom: 4.5rem;
+	animation: spread-three 0.5s infinite;
+	-webkit-animation: spread-three 0.5s infinite;
+	-ms-animation: spread-three 0.5s infinite;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+}
+
+#menu> div:nth-child(4) {
+	right: 1.5rem;
+	bottom: 4.5rem;
+	animation: spread-four 0.5s infinite;
+	-webkit-animation: spread-four 0.5s infinite;
+	-ms-animation: spread-four 0.5s infinite;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+}
+
+@keyframes spread-one {
+	from {
+		top: 0;
+		left: 0;
+	}
+	to {
+		left: 1.5rem;
+		top: 4.5rem;
+	}
+}
+
+@keyframes spread-two {
+	from {
+		top: 0;
+		right: 0;
+	}
+	to {
+		right: 1.5rem;
+		top: 4.5rem;
+	}
+}
+
+@keyframes spread-three {
+	from {
+		left: 0;
+		bottom: 0;
+	}
+	to {
+		left: 1.5rem;
+		bottom: 4.5rem;
+	}
+}
+
+@keyframes spread-four {
+	from {
+		right: 0;
+		bottom: 0;
+	}
+	to {
+		right: 1.5rem;
+		bottom: 4.5rem;
+	}
+}
+#page-one{
+	display: none;
+}
+#page-one .ps {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+}
+
+#page-one .ps .avatar {
+	width: 7.5rem;
+	height: 7.5rem;
+	border-radius: 50%;
+}
+
+#page-one .ps .avatar img {
+	width: 100%;
+	border-radius: 50%;
+	display: block;
+}
+#page-one .ps .name{
+	padding-top: .75rem;
+	text-align: center;
+	font-size: .9375rem;
+}
+#page-one .ps .post{
+	font-size: 1rem;
+	font-weight: bold;
+	text-align: center;
+	line-height: 2rem;
+}
+#page-two{
+	padding: .625rem;
+}
+#page-two .all-nav{
+	margin: 0 auto;
+}
+#page-two .all-nav .nav-title{
+	color: #fff;
+	font-size: 1.25rem;
+	padding-left: 2.25rem;
+}
+#page-two .all-nav .nav-bar{
+	position: relative;
+	padding-top: .375rem;
+	height: 1.875rem;
+}
+#page-two .all-nav .nav-bar .nav-bar-cir{
+	width: 2.25rem;
+	height: 2.25rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 0.125rem solid #A2E2C7;
+}
+#page-two .all-nav .nav-bar .nav-bar-one{
+	background-color: #fff;
+	height: .4375rem;
+	margin-left: 1.125rem;
+	width: calc(100% - 1.125rem);
+	width: -webkit-calc(100% - 1.125rem);
+}
+#page-two .all-nav .nav-bar .nav-bar-two{
+	background-color: #fff;
+	height: .375rem;
+	margin: .25rem 0 .25rem 1.125rem;
+	width: 80%;
+}
+#page-two .all-options{
+	padding-top: .625rem;
+}
+
+#page-two .all-options .item-option{
+	padding:  0 .625rem .625rem .625rem;
+	overflow: hidden;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+#page-two .all-options .item-option span{
+	float: left;
+}
+#page-two .all-options .item-option span:nth-child(1){
+	width: 30%;
+}
+#page-two .all-options .item-option span:nth-child(2){
+	width: 70%;
+	word-break: break-all;
+}
