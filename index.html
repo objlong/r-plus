@@ -7,22 +7,23 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-	<div id="menu" class="top">
-		<div class="tab">个人简介</div>
-		<div class="tab">工作经历</div>
-		<div class="tab">个人作品</div>
-		<div class="tab">自我推荐</div>
+	<div id="menu">
+		<div class="tab ps-info" data-page="psInfo">个人简介</div>
+		<div class="tab work-experience" data-page="workExperience">工作经历</div>
+		<div class="tab personal-work" data-page="personalWork">个人作品</div>
+		<div class="tab self-recommendation" data-page="selfRecommendation">自我推荐</div>
 	</div>
-	<div class="page" id="page-one">
+	<div class="turn-home">首页</div>
+	<div class="page" id="home-page">
 		<div class="ps">
 			<div class="avatar">
-				<img src="img/1.jpg"/>
+				<img src="img/me.jpg"/>
 			</div>
 			<div class="name">于常龙</div>
 			<div class="post">前端工程师</div>
 		</div>
 	</div>
-	<div class="page" id="page-two">
+	<div class="page" id="ps-info">
 		<div class="record">
 			<div class="all-nav">
 				<div class="nav-title">个人简介</div>
@@ -52,10 +53,169 @@
 				</div>
 				<div class="item-option">
 					<span>个人主页:</span>
-					<span>www.objlong.com</span>
+					<span><a href="www.objlong.com">www.objlong.com</a></span>
+				</div>
+			</div>
+		</div>
+		<div class="record">
+			<div class="all-nav">
+				<div class="nav-title">教育背景</div>
+				<div class="nav-bar">
+					<div class="nav-bar-cir"></div>
+					<div class="nav-bar-one"></div>
+					<div class="nav-bar-two"></div>
+					<div class="nav-bar-one"></div>
+				</div>
+			</div>
+			<div class="all-options">
+				<div class="item-option">
+					<span>学校:</span>
+					<span>鲁东大学</span>
+				</div>
+				<div class="item-option">
+					<span>学历:</span>
+					<span>本科</span>
+				</div>
+				<div class="item-option">
+					<span>专业:</span>
+					<span>交通运输</span>
+				</div>
+				<div class="item-option">
+					<span>英语水平:</span>
+					<span>CET-6</span>
+				</div>
+				<div class="item-option">
+					<span>计算机水平:</span>
+					<span>二级C语言、三级网络技术、四级软件测试工程师</span>
+				</div>
+				<div class="item-option">
+					<span>所获奖项:</span>
+					<span>校级优秀学生、山东省优秀毕业生、烟台市优秀义工</span>
+				</div>
+				<div class="item-option">
+					<span>技术栈:</span>
+					<span><i>1.html(5), css(3), 原生js, ECMAScript 6语法, AJAX, jQuery, requirejs, Node.js, MongoDB,Vue.js, Webpack, Grunt等。</i><br><i>2.了解php，python等语言。</i><br><i>3.热衷于各类技术，熟悉web标准，自学能力强。</i><br></span>
 				</div>
 			</div>
 		</div>
 	</div>
+	<div class="page" id="work-experience">
+		<div class="experience-record">
+			<div class="subnav">
+				<div class="line"></div>
+				<div class="nav-name">
+					<span>2015.12-至今</span>
+					<span>惠开心（北京）科技有限公司</span>
+				</div>
+				<div class="line"></div>
+			</div>
+			<div class="experience">
+				<div class="experience-item">
+					<div class="experience-title">项目名称：店里创客版</div>
+					<div class="experience-content">
+						<p>主要负责店里创客app大部分前端模块的编写。</p>
+						<p>技术栈：jQuery，模块化，单页面，Hybrid模式</p>
+						<p>个人心得：此项目为了提高用户体验，部分功能相似部分写到一个页面内，通过hash变化控制路由，且与客户端统一了交互函数的规范。</p>
+					</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-title">项目名称：店里微信商城(https://instore.hk/instore/)</div>
+					<div class="experience-content">
+						<p>主要负责微信商城多sku商品，订单管理，用户管理等功能模块编写。</p>
+						<p>技术栈：requirejs模块化，单页面应用，前端数据传输与处理。</p>
+						<p>个人心得：此项目为单页面应用，通过AMD加载的方式将各个模块载入，并且在多sku商品渲染与交互等逻辑方面受益匪浅。</p>
+					</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-title">项目名称：店里商家版</div>
+					<div class="experience-content">
+						<p>主要负责店里商家版会员，打印价签，商品管理等主要功能模块的编写。</p>
+						<p>技术栈：jQuery，模块化，单页面，Hybrid模式</p>
+						<p>个人心得：此项目涉及到商品分类等多种较为复杂的功能，为了提高用户体验，部分功能做了单页面处理。</p>
+					</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-title">项目名称：惠开心广告宝</div>
+					<div class="experience-content">
+						<p>主要负责惠开心广告宝投放广告功能模块的编写。</p>
+						<p>技术栈：jQuery，模块化，单页面，Hybrid模式，高德地图API开发。</p>
+						<p>个人心得：此项目调用了高德地图API实现了一系列定位，查找范围，地理位置控制等功能。</p>
+					</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-title">项目名称：惠开心官网</div>
+					<div class="experience-content">
+						<p>主要负责惠开心官网(<a href="huikaixin.cn">huikaixin.cn</a>)相关页面及逻辑的编写。</p>
+						<p>技术栈：响应式，媒体查询，视频播放。</p>
+						<p>个人心得：video标签的浏览器兼容，已经用媒体查询做响应式。</p>
+					</div>
+				</div>
+				<div class="experience-item">
+					<div class="experience-title">项目名称：惠开心BD工具</div>
+					<div class="experience-content">
+						<p>公司内部员工使用的管理工具。</p>
+						<p>技术栈：jQuery，模块化，单页面，Hybrid模式。</p>
+						<p>个人心得：来公司接手的第一个项目，让我快速熟悉了公司的开发流程与环境。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="experience-record">
+			<div class="subnav">
+				<div class="line"></div>
+				<div class="nav-name">
+					<span>2015.4-2015.10</span>
+					<span>烟台骨头科技</span>
+				</div>
+				<div class="line"></div>
+			</div>
+			<div class="experience">
+				<div class="experience-item">
+					<div class="experience-content">
+						<p>是我与几个爱好web的同学成立的工作室主要承接外部网站项目建设与运营。</p>
+						<p>“上海万介智能科技有限公司”项目(<a href="http://www.wanjie-i.com/">http://www.wanjie-i.com/</a>)</p>
+						<p>鲁大学生网(<a href="http://www.ldustu.com/">http://www.ldustu.com/</a>)</p>
+						<p>在猪八戒网接一些项目。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page" id="personal-work">
+		<div class="works-record">
+			<div class="all-nav">
+				<div class="nav-title">个人博客</div>
+				<div class="nav-bar">
+					<div class="nav-bar-cir"></div>
+					<div class="nav-bar-one"></div>
+					<div class="nav-bar-two"></div>
+					<div class="nav-bar-one"></div>
+				</div>
+			</div>
+			<div class="work-item">
+				<div class="work-title">个人博客（维护中）</div>
+				<div class="work-content">
+					<p>源码地址：<a href="https://github.com/objlong/blog">https://github.com/objlong/blog</a></p>
+					<p>博客地址：<a href="http://www.objlong.xin">http://www.objlong.xin</a></p>
+					<p>技术栈：Node.js, MongoDB, express, Vue.js</p>
+					<p>此博客后端采用Node.js+MongoDB数据库的方式来完成，view层采用的Vue.js。初步实现了用户注册与登录，markdown语法发表和修改博客，用户删除博客，留言与删除留言，pv统计等功能。</p>
+				</div>
+			</div>
+			<div class="work-item">
+				<div class="work-title">微信小程序V2EX资讯</div>
+				<div class="work-content">
+					<p>源码地址：<a href="https://github.com/objlong/v2ex-info">https://github.com/objlong/v2ex-info</a></p>
+					<p>利用v2ex的公开接口做的一个微信小程序示例。</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="page" id="self-recommendation">
+		<div class="recommendation-title">自我推荐</div>
+		<p class="recommendation-content">1.二次元+前端技术重度爱好者，跳跃思维+逻辑思维，既有天马行空的想象，又有工科男慎密的逻辑能力。</p>
+		<p class="recommendation-content">2.对前端充满热爱，从大二开始接触前端，敢于尝试各种前端新技术，工作之余对ECMAScript 6，React.js，Node.js, Vue.js等技术栈都有所学习，同时不忘巩固自己的原生js基础，对js模块化颇具心得，代码习惯良好。</p>
+	</div>
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
