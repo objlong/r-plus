@@ -39,6 +39,7 @@ p{
 	width: 100%;
 	background-color: #A2E2C7;
 	z-index: 1;
+	height: 4rem;
 }
 #menu .tab {
 	position: fixed;
