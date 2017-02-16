@@ -51,21 +51,22 @@ p{
 	border-radius: 50%;
 	cursor: pointer;
 	transform: scale(0);
+	-webkit-transform: scale(0);
 	transition: transform 1s, top 0.5s, left 0.5s, height 0.5s, width 0.5s, line-height 0.5s;
+	-webkit-transition: transform 1s, top 0.5s, left 0.5s, height 0.5s, width 0.5s, line-height 0.5s;
 	z-index: 1;
 }
 #menu.top .tab{
-	/*position: static;*/
 	border: .125rem solid #A2E2C7;
 	width: 25%;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	/*float: left;*/
 	height: 4rem;
 	line-height: 3.75rem;
 }
 #menu .tab.action{
 	transform: scale(1);
+	-webkit-transform: scale(1);
 }
 #menu.top .tab.active{
 	background-color: #D7ECF1! important;
